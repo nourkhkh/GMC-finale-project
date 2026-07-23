@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+    <title>Bali - 🌸 NKH Voyages</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            scroll-behavior:smooth;
+        }
+
+        body{
+            font-family:'Poppins',sans-serif;
+            background:#f4f9ff;
+            color:#333;
+        }
+
+
+        /* NAVBAR */
+
+        header{
+            background:#F8C8DC;
+            padding:20px 50px;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            color:white;
+            font-size:30px;
+            font-weight:bold;
+        }
+
+        nav a{
+            text-decoration:none;
+            color:white;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:#0099cc;
+        }
+
+
+        /* HERO */
+
+        .hero{
+            text-align:center;
+            padding:60px 30px;
+            background:#F8C8DC;
+        }
+
+        .hero h1{
+            color:#C8A2FF;
+            font-size:50px;
+        }
+
+        .hero img{
+            width:80%;
+            max-width:800px;
+            border-radius:20px;
+            margin:30px;
+            box-shadow:0 10px 25px rgba(0,0,0,.2);
+        }
+
+        .hero p{
+            font-size:20px;
+        }
+
+
+        /* SECTIONS */
+
+        section{
+            padding:50px;
+        }
+
+        h2{
+            text-align:center;
+            color:#F8AFCF;
+            font-size:38px;
+            margin-bottom:40px;
+        }
+
+
+        /* CARDS */
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+
+        .card{
+            background:white;
+            width:300px;
+            padding:25px;
+            border-radius:20px;
+            text-align:center;
+            box-shadow:0 10px 25px rgba(0,0,0,.1);
+        }
+
+
+        .card h3{
+            color:#ed1cae;
+            margin-bottom:15px;
+        }
+
+
+        .card p{
+            line-height:1.7;
+        }
+
+
+        .price{
+            color:#0099cc;
+            font-size:25px;
+            font-weight:bold;
+            margin:15px;
+        }
+
+
+        button{
+            background:#0099cc;
+            color:white;
+            border:none;
+            padding:12px 30px;
+            border-radius:30px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+
+        button:hover{
+            background:#0077aa;
+        }
+
+
+        /* ATTRACTIONS */
+
+
+        .places{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+
+        .places img{
+            width:250px;
+            height:300px;
+            object-fit:cover;
+            border-radius:15px;
+            transition:.3s;
+        }
+
+
+        .places img:hover{
+            transform:scale(1.05);
+        }
+
+
+        /* REVIEWS */
+
+
+        blockquote{
+            background:white;
+            width:80%;
+            margin:20px auto;
+            padding:30px;
+            border-left:8px solid #0099cc;
+            border-radius:15px;
+            font-style:italic;
+        }
+
+
+
+        /* CONTACT */
+
+
+        form{
+            width:450px;
+            max-width:100%;
+            margin:auto;
+            background:#EAF9F0;
+            padding:30px;
+            border-radius:20px;
+        }
+
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border-radius:10px;
+            border:1px solid #ccc;
+        }
+
+
+        input[type="submit"]{
+            background:#0099cc;
+            color:white;
+            cursor:pointer;
+        }
+
+
+
+        /* FOOTER */
+
+
+        footer{
+            background:#F8C8DC;
+            text-align:center;
+            padding:30px;
+            color:#4A4A4A;
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<nav>
+
+<div class="logo">
+🌸 NKH Voyages
+</div>
+
+
+<a href="index.html">
+← Back Home
+</a>
+
+
+</nav>
+
+</header>
+
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>🌴 Bali, Indonesia 🇮🇩</h1>
+
+<img src="bali.webp" alt="Bali">
+
+<p>
+Discover paradise beaches, tropical landscapes, ancient temples,
+and unforgettable experiences in Bali.
+</p>
+
+</div>
+
+
+
+
+<!-- ================= PACKAGES ================= -->
+
+<section>
+
+<h2>✈️ Bali Travel Packages</h2>
+
+<div class="cards">
+
+
+<!-- Standard Package -->
+
+<div class="card">
+
+<h3>🌴 Standard Package</h3>
+
+<p>
+✔ 5 Days / 4 Nights<br>
+✔ Hotel Stay<br>
+✔ Airport Transfer<br>
+✔ Daily Breakfast<br>
+✔ City Tour
+</p>
+
+<div class="price">
+$899
+</div>
+
+<button onclick="bookNow('Standard Package - $899')">
+    Book Now
+</button>
+
+</div>
+
+
+
+<!-- Deluxe Package -->
+
+<div class="card">
+
+<h3>🌺 Deluxe Package</h3>
+
+<p>
+✔ 7 Days / 6 Nights<br>
+✔ 4-Star Hotel<br>
+✔ Island Tours<br>
+✔ Breakfast & Dinner<br>
+✔ Private Guide
+</p>
+
+<div class="price">
+$1299
+</div>
+
+<button onclick="bookNow('Deluxe Package - $1299')">
+    Book Now
+</button>
+
+</div>
+
+
+
+
+<!-- Luxury Package -->
+
+<div class="card">
+
+<h3>👑 Luxury Package</h3>
+
+<p>
+✔ 10 Days / 9 Nights<br>
+✔ 5-Star Resort<br>
+✔ Private Driver<br>
+✔ All Meals Included<br>
+✔ VIP Experiences
+</p>
+
+<div class="price">
+$1899
+</div>
+
+<button onclick="bookNow('Luxury Package - $1899')">
+    Book Now
+</button>
+
+</div>
+
+
+</div>
+
+</section>
+
+</div>
+
+
+</section>
+
+
+
+
+<!-- ATTRACTIONS -->
+
+
+<section>
+
+
+<h2>📍 Top Bali Attractions</h2>
+
+
+<div class="places">
+
+
+<img src="lempuyang.webp" alt="Temple">
+
+<img src="many-beautiful-places.jpg" alt="Bali Beach">
+
+<img src="chalel.jpg" alt="Bali Resort">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- INCLUDED -->
+
+
+<section>
+
+
+<h2>🌸 What's Included?</h2>
+
+
+<div class="card" style="margin:auto;">
+
+<p>
+
+✔ Hotel accommodation<br><br>
+
+✔ Airport transportation<br><br>
+
+✔ Guided tours<br><br>
+
+✔ Local experiences<br><br>
+
+✔ Customer support
+
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<!-- REVIEWS -->
+
+
+<section>
+
+
+<h2>⭐ Traveler Reviews</h2>
+
+
+<blockquote>
+
+"Bali was amazing! The beaches were beautiful and everything was perfectly organized."
+
+<br><br>
+
+- layla
+
+</blockquote>
+
+
+
+<blockquote>
+
+"The best vacation experience I have ever had. Highly recommended!"
+
+<br><br>
+
+- jaafer
+
+</blockquote>
+
+
+</section>
+
+
+
+
+
+<!-- CONTACT -->
+
+
+<section>
+
+
+<h2>📩 Book Your Trip</h2>
+
+
+<form>
+
+
+<label>Name:</label>
+
+<input type="text" placeholder="Your name">
+
+
+
+<label>Email:</label>
+
+<input type="email" placeholder="Your email">
+
+
+
+<label>Message:</label>
+
+<textarea rows="5"></textarea>
+
+
+
+<input type="submit" value="Send Request">
+
+
+</form>
+
+
+</section>
+
+
+
+
+
+
+<footer>
+
+<p>
+© 2026 Velvet Voyages. All Rights Reserved.
+</p>
+
+
+</footer>
+
+
+
+
+<script>
+
+document.querySelector("form").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you! Your Bali trip request has been received 🌴");
+
+});
+function bookNow(packageName){
+
+    alert("🌴 You selected: " + packageName);
+
+    document.querySelector("#contact").scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+</script>
+
+
+</body>
+
+</html>
