@@ -1,4 +1,4 @@
-# 🌍 Velvet Voyages
+# 🌸 NKH Voyages
 
 > **Explore. Dream. Discover.**
 
@@ -160,4 +160,4 @@ Created with ❤️ using HTML, CSS, and JavaScript.
 
 # ✈️ "Travel isn't always about the destination; it's about the memories you create along the way."
 
-## 🌸 Thank you for visiting Velvet Voyages!
+## 🌸 Thank you for visiting NKH voyages!
